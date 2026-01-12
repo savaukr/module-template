@@ -1,6 +1,6 @@
 {
   "name": "@sava_ukr/module-template",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Event emitter library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
