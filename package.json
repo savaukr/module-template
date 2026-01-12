@@ -1,12 +1,13 @@
 {
   "name": "@sava_ukr/module-template",
-  "version": "1.0.5",
+  "version": "1.0.2",
   "description": "Event emitter library",
   "main": "dist/index.js",
-  "module": "dist/index.d.ts",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc",
