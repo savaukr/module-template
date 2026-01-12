@@ -1,0 +1,51 @@
+# My Awesome Package
+
+> Awesome event emitter library with TypeScript support
+
+## Installation
+```bash
+npm install @username/my-awesome-package
+```
+
+## Usage
+```typescript
+import { EventEmitter, delay } from '@username/my-awesome-package';
+
+// Create event emitter
+const onScoreChange = new EventEmitter<number>();
+
+// Subscribe
+const unsubscribe = onScoreChange.subscribe((score) => {
+    console.log('Score:', score);
+});
+
+// Emit
+onScoreChange.emit(100);
+
+// Unsubscribe
+unsubscribe();
+
+// Delay utility
+await delay(1000);
+console.log('1 second later');
+```
+
+## API
+
+### EventEmitter<T>
+
+#### Methods
+
+- `subscribe(listener: (data: T) => void): () => void` - Subscribe to events
+- `unsubscribe(listener: (data: T) => void): void` - Unsubscribe from events
+- `emit(data: T): void` - Emit event
+- `clear(): void` - Clear all listeners
+- `listenerCount: number` - Get listener count
+
+### delay(ms: number): Promise<void>
+
+Delay execution for specified milliseconds.
+
+## License
+
+MIT © Your Name

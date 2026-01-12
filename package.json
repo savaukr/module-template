@@ -1,0 +1,49 @@
+{
+  "name": "@savaukr/module-template",
+  "version": "1.0.0",
+  "description": "Event emitter library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "event",
+    "emitter",
+    "pubsub",
+    "typescript"
+  ],
+  "author": "Pachevskyi <sava_ukrl@ukr.net>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/savaukr/module-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/savaukr/module-template/issues"
+  },
+  "homepage": "https://github.com/username/savaukr/module-template#readme",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
