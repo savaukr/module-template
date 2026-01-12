@@ -1,29 +1,5 @@
-# Source files (не публікувати)
 src/
-tests/
-*.test.ts
-
-# Config files
 tsconfig.json
-.eslintrc.js
-.prettierrc
-jest.config.js
-
-# IDE
-.vscode/
-.idea/
-
-# Git
 .git/
-.gitignore
-
-# CI/CD
-.github/
-.gitlab-ci.yml
-
-# Docs (окрім README)
-docs/
-examples/
-
-# Development
-*.map
+*.test.ts
+node_modules/
