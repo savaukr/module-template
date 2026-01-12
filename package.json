@@ -1,22 +1,20 @@
 {
   "name": "@sava_ukr/module-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Event emitter library",
   "main": "dist/index.js",
   "module": "dist/index.d.ts",
   "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*.js",
-    "dist/**/*.d.ts",
-    "README.md"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
     "prepublishOnly": "npm run build",
     "test": "jest",
     "lint": "eslint src/**/*.ts",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"src/**/*.ts\"",
+    "patch": "npm version patch",
+    "publish": "npm publish --access public"
   },
   "keywords": [
     "event",
