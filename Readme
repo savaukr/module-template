@@ -1,15 +1,15 @@
-# My Awesome Package
+# Event Emitter module
 
 > Awesome event emitter library with TypeScript support
 
 ## Installation
 ```bash
-npm install @username/my-awesome-package
+npm install  @sava_ukr/module-template
 ```
 
 ## Usage
 ```typescript
-import { EventEmitter, delay } from '@username/my-awesome-package';
+import { EventEmitter, delay } from ' @sava_ukr/module-template';
 
 // Create event emitter
 const onScoreChange = new EventEmitter<number>();
